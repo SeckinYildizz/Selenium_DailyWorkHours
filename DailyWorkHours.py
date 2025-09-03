@@ -30,7 +30,7 @@ for employee in employee_names:
     an_employee = [employee]
     report.append(an_employee)
 
-# Opens to use Chrome to execute the code below
+# Opens Chrome to execute the code below
 driver = webdriver.Chrome()
 driver.maximize_window()
 # Opens the given website
@@ -132,7 +132,8 @@ try:
                     work_hours = int(work_hours_text[:2].strip())
                 else:
                     work_hours = 0    
-                
+
+                # Apply rounding logic
                 if "minute" in work_hours_text:
                     work_minutes = int(work_hours_text[work_hours_text.find("min") - 3 : work_hours_text.find("min") - 1].strip())
                 
