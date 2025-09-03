@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 
-
 user_name = "" # Enter user name
 password = "" # Enter password
 employee_names = [] # Enter employee names as a list
